@@ -15,7 +15,7 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body class="destination fasdfas dfasdfasd sdfasdfa" id="hello">
+<body class="destination" onload="variableChanger('.destination')">
   <a class="skip-to-content " href="#main">Skip to content</a>
   <header class="primary-header flex">
     <div class="logo">
@@ -55,14 +55,11 @@
     </div>
     <div class="destination--tabs">
       <div class="tabs flex">
+        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="true">Moon</button>
+        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="false">Mars</button>
         <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn"
-          onclick="data_func(`destination`,`Moon`);fixFocus()" data-visible="true">Moon</button>
-        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn"
-          onclick="data_func(`destination`,`Mars`);fixFocus()" data-visible="false">Mars</button>
-        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn"
-          onclick="data_func(`destination`,`Europa`);fixFocus()" data-visible="false">Europa</button>
-        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn"
-          onclick="data_func(`destination`,`Titan`);fixFocus()" data-visible="false">Titan</button>
+          data-visible="false">Europa</button>
+        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="false">Titan</button>
       </div>
     </div>
 
@@ -93,68 +90,14 @@
     </div>
 
   </main>
-
-
-  <!-- <main id="main" class="grid-container grid">
-    <div class="grid-container--destination-1 flex-col">
-      <div class="destination__title">
-        <h5 class="numbered-title "><span>01</span>Pick
-          Your
-          Destination
-        </h5>
-      </div>
-      <div class="destination__image">
-        <picture class="planetImage">
-          <source srcset="/starter-code/assets/destination/image-moon.webp" type="image/webp">
-          <img src="/starter-code/assets/destination/image-moon.png" alt="the moon">
-        </picture>
-      </div>
-    </div>
-
-    <div class="grid-container--destination-2 flex-col">
-      <hr>
-      <div class="description__tabs">
-        <div class="tabs flex clickables">
-          <button class="uppercase text-accent letter-spacing-2 ff-sans-cond"
-            onclick="data_func(`destination`,`Moon`);fixFocus(0);">Moon</button>
-          <button class="uppercase text-accent letter-spacing-2 ff-sans-cond"
-            onclick="data_func(`destination`,`Mars`);fixFocus(1);">Mars</button>
-          <button class="uppercase text-accent letter-spacing-2 ff-sans-cond"
-            onclick="data_func(`destination`,`Europa`);fixFocus(2);">Europa</button>
-          <button class="uppercase text-accent letter-spacing-2 ff-sans-cond" onclick="data_func(`destination`,`Titan`);
-            fixFocus(3);">Titan</button>
-        </div>
-      </div>
-      <div class="destination__description flex flex-col">
-        <h1 class="uppercase ff-serif fs-800 letter-spacing-2 planetName">Moon</h1>
-        <p class="text-accent fs-400 planetDescription">See our planet as you’ve never seen it before. A perfect
-          relaxing trip
-          away to
-          help
-          regain perspective and come
-          back
-          refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
-      </div>
-      <div class="destination__meta flex ">
-        <div>
-          <h5 class="uppercase letter-spacing-1 text-accent fs-300 ff-sans-cond">AVG. DISTANCE</h5>
-          <p class="fs-500 uppercase ff-serif planetDistance">384,400 km</p>
-        </div>
-        <div>
-          <h5 class="uppercase letter-spacing-1 text-accent fs-300 ff-sans-cond">Est. travel time</h5>
-          <p class="fs-500 uppercase ff-serif planetTravel">3 days</p>
-        </div>
-      </div>
-    </div>
-  </main> -->
 </body>
 
 </html>
 
 <!-- 
-  1. description  
-  2. name
-  3. distance
-  4. travel   
-  5. image
+  1. name
+  2. description  
+  3. image
+  4. distance
+  5. travel   
  -->
