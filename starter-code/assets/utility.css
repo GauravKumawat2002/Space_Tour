@@ -122,7 +122,7 @@ p {
   place-items: center;
   text-align: center;
 }
-.grid-container p {
+.grid-container .home p {
   max-width: 50ch;
 }
 .grid-container > *:first-child {

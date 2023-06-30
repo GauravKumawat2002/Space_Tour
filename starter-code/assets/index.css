@@ -538,7 +538,7 @@
   grid-template-areas:
     "page-title"
     "tech-img"
-    "technology-description";
+    "technology--description";
   padding-bottom: clamp(1.2rem, 3vw, 5rem);
 }
 .grid-container--technology > .page--title {
@@ -558,13 +558,13 @@
   gap: 2rem;
 }
 .grid-container--technology > .A {
-  grid-area: technology-description;
+  grid-area: technology--description;
   display: flex;
   flex-direction: column;
   padding-inline: 1rem;
   gap: 1rem;
 }
-.technology-description h1 > div {
+.technology--description h1 > div {
   margin-bottom: 1rem;
   font-size: var(--fs-300);
 }
@@ -572,11 +572,11 @@
   .grid-container--technology {
     grid-template-areas:
       ". page-title page-title ."
-      ". technology-description tech-img tech-img";
+      ". technology--description tech-img tech-img";
     padding-bottom: clamp(1.2rem, 3vw, 5rem);
   }
   .grid-container--technology > .A {
-    grid-area: technology-description;
+    grid-area: technology--description;
     flex-direction: row;
     padding-inline: 0;
   }
@@ -586,7 +586,7 @@
     padding-inline: 1rem;
     gap: 2rem;
   }
-  .A > .technology-description {
+  .A > .technology--description {
     text-align: left;
     justify-content: space-between;
     line-height: clamp(1.6, 1.7, 2.1);
