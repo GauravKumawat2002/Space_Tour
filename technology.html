@@ -43,25 +43,29 @@
       <h5 class="numbered-title"><span aria-hidden="true">03</span>Space launch 101
       </h5>
     </div>
-    <div class="technology--img">
-      <picture>
-        <source media="(min-width: 1100px)" srcset="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
-          alt="Tech Image">
-        <img src="/starter-code/assets/technology/image-launch-vehicle-landscape.jpg" alt="Tech Image" class="techImg">
-      </picture>
-    </div>
+
+    <picture class="technology--img">
+      <source media="(min-width: 1100px)" srcset="/starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+        alt="Tech Image">
+      <img src="/starter-code/assets/technology/image-launch-vehicle-landscape.jpg" alt="Tech Image" class="techImg">
+    </picture>
 
     <div class="A">
-      <div class="numbered-indicators ">
-        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="true">1</button>
-        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false">2</button>
-        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false">3</button>
+      <div class="numbered-indicators">
+        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="true"
+          onclick="data_func('.technology','Launch vehicle')">1</button>
+        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false"
+          onclick="data_func('.technology','Spaceport')">2</button>
+        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false"
+          onclick="data_func('.technology','Space capsule')">3</button>
       </div>
-      <div class="technology-description flex flex-col">
+      <div class="technology--description flex flex-col">
         <h1 class="ff-serif uppercase fs-700">
-          <div class=" text-accent ff-sans-cond">The terminology...</div>Launch vehicle
+          <div class=" text-accent ff-sans-cond">The terminology...</div> <span class="vehicle-type">Launch
+            vehicle</span>
         </h1>
-        <p class="technology-description__meta ff-sans-normal text-accent">A launch vehicle or carrier rocket is a
+        <p class="technology--description__meta ff-sans-normal text-accent fs-400">A launch vehicle or carrier rocket
+          is a
           rocket-propelled
           vehicle used to
           carry a
