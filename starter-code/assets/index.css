@@ -89,11 +89,8 @@
 .main-nav a:hover::after {
   opacity: 0.25;
 }
-/* .main-nav a:focus-within::after,
-.main-nav a:where(:focus-within):hover::after {
-  opacity: 1;
-} */
-.main-nav a::where(.fixFocus)::after,
+
+.main-nav a:where(.fixFocus)::after,
 .main-nav a:where(.fixFocus):hover::after {
   opacity: 1;
 }
@@ -177,13 +174,8 @@
 .tabs > button:hover::after {
   opacity: 0.25;
 }
-/* .tabs > button:focus-within::after,
-.tabs > button:where(:focus-within):hover::after,
-.tabs > button:focus-within {
-  opacity: 1;
-  color: hsl(var(--heading_body-color));
-} */
-.tabs > button:where(.fixFocus):after,
+
+.tabs > button:where(.fixFocus)::after,
 .tabs > button:where(.fixFocus):hover::after {
   opacity: 1;
   color: hsl(var(--heading_body-color));
@@ -202,8 +194,8 @@
 .dot-indicators > button:hover {
   background-color: hsl(var(--heading_body-color), 0.5);
 }
-.dot-indicators > button:focus-within,
-.dot-indicators > button:where(:focus-within):hover {
+.dot-indicators > button:where(.fixFocus),
+.dot-indicators > button:where(.fixFocus):hover {
   background-color: hsl(var(--heading_body-color));
 }
 .numbered-indicators {
@@ -222,14 +214,12 @@
 .numbered-indicators > button:hover {
   border: 1px solid hsl(var(--heading_body-color));
 }
-.numbered-indicators > button:focus-within,
-.numbered-indicators > button:where(:focus-within):hover {
+.numbered-indicators > button:where(.fixFocus),
+.numbered-indicators > button:where(.fixFocus):hover {
   background-color: hsl(var(--heading_body-color));
   color: hsl(var(--bgcolor));
 }
-/* .fixFocus {
-  opacity: 1;
-} */
+
 /* --------SPECIFIC PAGES--------- */
 
 /* ------- HOME --------------------- */

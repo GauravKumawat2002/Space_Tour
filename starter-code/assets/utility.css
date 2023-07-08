@@ -65,7 +65,6 @@ body {
   text-rendering: optimizeLegibility;
   min-height: 100vh;
   display: grid;
-  /* overflow-x: hidden; */
 }
 img,
 picture {
