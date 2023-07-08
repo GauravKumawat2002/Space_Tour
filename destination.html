@@ -9,10 +9,11 @@
 
   <link rel="stylesheet" href="/starter-code/assets/index.css">
 
-  <script src="index.js" defer></script>
-  <script src="elementStore.js" defer></script>
-  <script src="dataFetch.js" defer></script>
-  <title>Frontend Mentor | Space tourism website</title>
+  <script src="JS/index.js" defer></script>
+  <script src="JS/elementStore.js" defer></script>
+  <script src="JS/dataFetch.js" defer></script>
+  <script src="JS/features.js" defer></script>
+  <title>Space tourism website</title>
 </head>
 
 <body class="destination" onload="variableChanger('.destination')">
@@ -54,16 +55,16 @@
       </picture>
     </div>
     <div class="destination--tabs">
-      <div class="tabs flex">
-        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="true"
-          onclick="data_func('.destination','Moon')">Moon</button>
+      <ul class="tabs flex">
+        <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn fixFocus" data-visible="true"
+          onclick="data_func('.destination','Moon'), fixFocus('tabs','0')">Moon</button>
         <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="false"
-          onclick="data_func('.destination','Mars')">Mars</button>
+          onclick="data_func('.destination','Mars'), fixFocus('tabs','1')">Mars</button>
         <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="false"
-          onclick="data_func('.destination','Europa')">Europa</button>
+          onclick="data_func('.destination','Europa'), fixFocus('tabs','2')">Europa</button>
         <button class="uppercase text-accent letter-spacing-2 ff-sans-cond tabs-btn" data-visible="false"
-          onclick="data_func('.destination','Titan')">Titan</button>
-      </div>
+          onclick="data_func('.destination','Titan'), fixFocus('tabs','3')">Titan</button>
+      </ul>
     </div>
 
     <div class="destination--title">

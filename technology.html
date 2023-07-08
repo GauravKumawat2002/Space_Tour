@@ -9,10 +9,11 @@
 
   <link rel="stylesheet" href="/starter-code/assets/index.css">
 
-  <script src="index.js" defer></script>
-  <script src="elementStore.js" defer></script>
-  <script src="dataFetch.js" defer></script>
-  <title>Frontend Mentor | Space tourism website</title>
+  <script src="JS/index.js" defer></script>
+  <script src="JS/elementStore.js" defer></script>
+  <script src="JS/dataFetch.js" defer></script>
+  <script src="JS/features.js" defer></script>
+  <title>Space tourism website</title>
 </head>
 
 <body class="technology" onload="variableChanger('.technology')">
@@ -51,14 +52,14 @@
     </picture>
 
     <div class="A">
-      <div class="numbered-indicators">
-        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="true"
-          onclick="data_func('.technology','Launch vehicle')">1</button>
+      <ul class="numbered-indicators">
+        <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond fixFocus" data-visible="true"
+          onclick="data_func('.technology','Launch vehicle'), fixFocus('.numbered-indicators','0')">1</button>
         <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false"
-          onclick="data_func('.technology','Spaceport')">2</button>
+          onclick="data_func('.technology','Spaceport'), fixFocus('.numbered-indicators','1')">2</button>
         <button class="uppercase text-white fs-500 letter-spacing-2 ff-sans-cond" data-visible="false"
-          onclick="data_func('.technology','Space capsule')">3</button>
-      </div>
+          onclick="data_func('.technology','Space capsule'), fixFocus('.numbered-indicators','2')">3</button>
+      </ul>
       <div class="technology--description flex flex-col">
         <h1 class="ff-serif uppercase fs-700">
           <div class=" text-accent ff-sans-cond">The terminology...</div> <span class="vehicle-type">Launch

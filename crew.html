@@ -9,10 +9,11 @@
 
   <link rel="stylesheet" href="/starter-code/assets/index.css">
 
-  <script src="index.js" defer></script>
-  <script src="elementStore.js" defer></script>
-  <script src="dataFetch.js" defer></script>
-  <title>Frontend Mentor | Space tourism website</title>
+  <script src="JS/index.js" defer></script>
+  <script src="JS/elementStore.js" defer></script>
+  <script src="JS/dataFetch.js" defer></script>
+  <script src="JS/features.js" defer></script>
+  <title>Space tourism website</title>
 </head>
 
 <body class="crew" onload="variableChanger('.crew')">
@@ -51,16 +52,20 @@
     </picture>
 
     <div class="crewMember--description flex flex-col">
-      <div class="dot-indicators flex">
-        <button aria-selected="true" onclick="data_func('.crew','Douglas Hurley')"><span class="sr-only">Slide
+      <ul class="dot-indicators flex">
+        <button class="fixFocus" aria-selected="true"
+          onclick="data_func('.crew','Douglas Hurley'), fixFocus('dot-indicators',0)"><span class="sr-only">Slide
             title</span></button>
-        <button aria-selected="false" onclick="data_func('.crew','Mark Shuttleworth')"><span class="sr-only">Slide
+        <button aria-selected="false"
+          onclick="data_func('.crew','Mark Shuttleworth'), fixFocus('.dot-indicators',1)"><span class="sr-only">Slide
             title</span></button>
-        <button aria-selected="false" onclick="data_func('.crew','Victor Glover')"><span class="sr-only">Slide
+        <button aria-selected="false" onclick="data_func('.crew','Victor Glover'), fixFocus('dot-indicators',2)"><span
+            class="sr-only">Slide
             title</span></button>
-        <button aria-selected="false" onclick="data_func('.crew','Anousheh Ansari')"><span class="sr-only">Slide
+        <button aria-selected="false" onclick="data_func('.crew','Anousheh Ansari'), fixFocus('dot-indicators',3)"><span
+            class="sr-only">Slide
             title</span></button>
-      </div>
+      </ul>
 
       <div class="crewMember--description__meta flex flex-col">
         <h1 class="ff-serif uppercase fs-700">
